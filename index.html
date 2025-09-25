@@ -3,22 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Minha VSL</title>
+  <title>VSL</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
       background: #f9f9f9;
-    }
-    h1 {
-      text-align: center;
-      padding: 20px;
-      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
     }
     .video-container {
       position: relative;
-      padding-bottom: 56.25%; /* 16:9 */
+      padding-bottom: 56.25%; /* Proporção 16:9 */
       height: 0;
       overflow: hidden;
       max-width: 100%;
@@ -34,13 +32,12 @@
   </style>
 </head>
 <body>
-  <h1>Minha VSL</h1>
   <div class="video-container">
     <iframe 
-      src="https://www.youtube.com/embed/_KjZRDHKIdo?rel=0&showinfo=0&modestbranding=1&controls=0"
+      src="https://www.youtube.com/embed/_KjZRDHKIdo?rel=0&showinfo=0&modestbranding=1&controls=0&disablekb=1"
       title="YouTube video"
       frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allow="autoplay; encrypted-media"
       allowfullscreen
       loading="lazy">
     </iframe>
